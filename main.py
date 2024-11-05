@@ -18,7 +18,6 @@ def main():
 
         choice = input("\nEnter your choice: ")
         if choice == "4":
-            linked_list.save_inventory("inventory.txt")
             print("Exiting the program. Thank you for visiting Loker Union Book Store!")
             break
         else:
