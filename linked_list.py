@@ -31,6 +31,10 @@ class LinkedList:
         while current:
             key = current.key
             item = current.item
+            # this is just a function to get a value from a dictionary
+            # [] list becomes FD : sandwhich when we append.
+            # the list keeps growing
+            
             category_items.setdefault(key, []).append(item)
             current = current.next
 
