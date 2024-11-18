@@ -38,3 +38,4 @@ MSC-stickynotes
 MSC-whiteboardmarker
 MSC-correctionfluid
 MSC-envelopes
+FD-eggs

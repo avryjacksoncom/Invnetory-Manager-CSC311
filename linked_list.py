@@ -1,3 +1,4 @@
+import time
 class Node:
     def __init__(self, key, item):
         self.key = key      
@@ -35,9 +36,8 @@ class LinkedList:
         return False
     
     def display_items(self):
-        if not self.head:
-            print("Inventory is empty.")
-            return
+        # Start timing
+        start_time = time.time()
         
         category_items = {}
         current = self.head
@@ -52,6 +52,13 @@ class LinkedList:
             print(f"\nCategory: {category}")
             for item in category_items[category]:
                 print(f" - {item}")
+        
+        # End timing
+        end_time = time.time()
+        execution_time_ms = (end_time - start_time) * 1000
+        print()
+        print("Display method time:")
+        print(f"Execution time: {execution_time_ms:.2f} ms")
 
     def load_inventory(self, filename):
         try:
