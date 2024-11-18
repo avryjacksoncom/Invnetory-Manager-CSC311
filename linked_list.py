@@ -20,7 +20,7 @@ class LinkedList:
                 current = current.next
             current.next = new_node
             
-    def remove_item(self, key,item_name):
+    def remove_item(self, key, item_name):
         prev = None
         current = self.head
         while current:
