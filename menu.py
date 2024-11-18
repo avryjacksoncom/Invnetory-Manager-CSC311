@@ -12,8 +12,10 @@ class Menu:
             self.linked_list.add_item(key, item)
             print(f"Added {item} to the inventory under category {key}.")
         elif choice == "3":
+            key = input("Enter category (e.g., FD, DR,MSC): ").strip()
             item = input("Enter the item name to remove: ")
-            if self.linked_list.remove_item(item):
+            
+            if self.linked_list.remove_item(key,item):
                 print(f"Removed {item} from the inventory.")
             else:
                 print(f"Item {item} not found in inventory.")
