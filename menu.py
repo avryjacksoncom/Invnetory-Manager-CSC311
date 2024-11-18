@@ -7,7 +7,7 @@ class Menu:
             print("\nViewing Inventory...")
             self.linked_list.display_items()
         elif choice == "2":
-            key = input("Enter category (e.g., FD, DR): ").strip()
+            key = input("Enter category (e.g., FD, DR, MSC): ").strip()
             item = input("Enter item name: ").strip()
             self.linked_list.add_item(key, item)
             print(f"Added {item} to the inventory under category {key}.")
