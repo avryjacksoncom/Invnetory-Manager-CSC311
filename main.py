@@ -25,6 +25,7 @@ def main():
         #remove option doesnt work
         if choice == "5":
             print(exitPrompt)
+            linked_list.save_inventory("inventory.txt")
             break
         else:
             menu.handle_choice(choice)

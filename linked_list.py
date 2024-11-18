@@ -19,6 +19,7 @@ class LinkedList:
             while current.next:
                 current = current.next
             current.next = new_node
+        self.save_inventory("inventory.txt")
 
     def display_items(self):
         if not self.head:
