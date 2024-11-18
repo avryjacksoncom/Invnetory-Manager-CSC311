@@ -16,9 +16,9 @@ class Menu:
             item = input("Enter the item name to remove: ")
             
             if self.linked_list.remove_item(key,item):
-                print(f"Removed {item} from the inventory.")
+                print(f"Removed {item} from the {key} catgoryof the inventory.")
             else:
-                print(f"Item {item} not found in inventory.")
+                print(f"Item {item} not found in {key} inventory.")
         elif choice == "4":
             truckload_file = input("Enter the name of the truckload file: ").strip()
             self.linked_list.load_truckload(truckload_file)
