@@ -19,8 +19,21 @@ class LinkedList:
             while current.next:
                 current = current.next
             current.next = new_node
-        self.save_inventory("inventory.txt")
-
+            
+    def remove_item(self, key, item_name):
+        prev = None
+        current = self.head
+        while current:
+            if key == current.key and current.item == item_name:
+                if prev:
+                    prev.next = current.next
+                else:
+                    self.head = current.next
+                return True
+            prev = current
+            current = current.next
+        return False
+    
     def display_items(self):
         if not self.head:
             print("Inventory is empty.")
@@ -40,20 +53,6 @@ class LinkedList:
             for item in category_items[category]:
                 print(f" - {item}")
 
-    def remove_item(self, item_name):
-        prev = None
-        current = self.head
-        while current:
-            if current.item == item_name:
-                if prev:
-                    prev.next = current.next
-                else:
-                    self.head = current.next
-                return True
-            prev = current
-            current = current.next
-        return False
-    
     def load_inventory(self, filename):
         try:
             with open(filename, 'r') as file:
