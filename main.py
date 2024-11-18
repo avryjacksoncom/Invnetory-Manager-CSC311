@@ -22,6 +22,7 @@ def main():
     while True:
         print(menuPrompt)
         choice = input("\nEnter your choice: ")
+        #remove option doesnt work
         if choice == "5":
             print(exitPrompt)
             break
