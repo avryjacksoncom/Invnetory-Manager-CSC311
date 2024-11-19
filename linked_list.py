@@ -92,8 +92,7 @@ class LinkedList:
                     
                     if '-' in line:
                         key, item = line.split('-', 1)
-                        self.add_item(key, item)
-                        
+                        self.add_item(key, item)    
             print(f"Truckload from '{truckload_file}' has been added to the inventory.")
             
             # Overwrite the inventory file with truck inventory

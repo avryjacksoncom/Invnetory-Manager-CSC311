@@ -28,7 +28,6 @@ MSC-highlighter
 MSC-glue
 MSC-scissors
 MSC-sharpener
-MSC-stapler
 MSC-tape
 MSC-paperclips
 MSC-binder
@@ -39,3 +38,5 @@ MSC-whiteboardmarker
 MSC-correctionfluid
 MSC-envelopes
 FD-eggs
+MSC-sharpie
+FD-jollyrancher
